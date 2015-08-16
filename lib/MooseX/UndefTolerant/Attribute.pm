@@ -1,8 +1,9 @@
 package MooseX::UndefTolerant::Attribute;
-{
-  $MooseX::UndefTolerant::Attribute::VERSION = '0.19';
-}
+
+our $VERSION = '0.20';
+
 use Moose::Role;
+use namespace::autoclean;
 
 around('initialize_instance_slot', sub {
     my $orig = shift;
@@ -29,19 +30,21 @@ around('initialize_instance_slot', sub {
 
 1;
 
-# ABSTRACT: Make your attribute(s) tolerant to undef intitialization
+# ABSTRACT: Make your attribute(s) tolerant to undef initialization
 
 __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
-MooseX::UndefTolerant::Attribute - Make your attribute(s) tolerant to undef intitialization
+MooseX::UndefTolerant::Attribute - Make your attribute(s) tolerant to undef initialization
 
 =head1 VERSION
 
-version 0.19
+version 0.20
 
 =head1 SYNOPSIS
 
@@ -74,7 +77,7 @@ Effectively behaving as if you had not provided a value at all.
 
 Cory G Watson <gphat at cpan.org>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 COPYRIGHT AND LICENCE
 
 This software is copyright (c) 2011 by Cory G Watson.
 

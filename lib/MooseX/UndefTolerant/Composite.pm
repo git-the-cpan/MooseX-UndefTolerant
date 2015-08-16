@@ -1,7 +1,7 @@
 package MooseX::UndefTolerant::Composite;
-{
-  $MooseX::UndefTolerant::Composite::VERSION = '0.19';
-}
+
+our $VERSION = '0.20';
+
 use Moose::Role;
 
 around apply_params => sub {

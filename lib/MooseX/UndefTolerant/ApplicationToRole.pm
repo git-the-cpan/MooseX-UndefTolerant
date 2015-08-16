@@ -1,7 +1,7 @@
 package MooseX::UndefTolerant::ApplicationToRole;
-{
-  $MooseX::UndefTolerant::ApplicationToRole::VERSION = '0.19';
-}
+
+our $VERSION = '0.20';
+
 use Moose::Role;
 
 around apply => sub {

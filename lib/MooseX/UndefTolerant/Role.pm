@@ -1,7 +1,7 @@
 package MooseX::UndefTolerant::Role;
-{
-  $MooseX::UndefTolerant::Role::VERSION = '0.19';
-}
+
+our $VERSION = '0.20';
+
 use Moose::Role;
 
 sub composition_class_roles { 'MooseX::UndefTolerant::Composite' }

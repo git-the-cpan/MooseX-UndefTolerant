@@ -1,9 +1,6 @@
-package MooseX::UndefTolerant;
-{
-  $MooseX::UndefTolerant::VERSION = '0.19';
-}
-# git description: v0.18-1-g0dc4600
+package MooseX::UndefTolerant; # git description: v0.19-9-gbec8e8b
 
+our $VERSION = '0.20';
 
 use strict;
 use warnings;
@@ -57,13 +54,15 @@ __END__
 
 =pod
 
+=encoding UTF-8
+
 =head1 NAME
 
 MooseX::UndefTolerant - Make your attribute(s) tolerant to undef initialization
 
 =head1 VERSION
 
-version 0.19
+version 0.20
 
 =head1 SYNOPSIS
 
@@ -118,7 +117,7 @@ of that role's attributes will be undef-tolerant.
 
 =head1 MOTIVATION
 
-I often found myself in this quandry:
+I often found myself in this quandary:
 
   package My:Class;
   use Moose;
@@ -144,6 +143,8 @@ real solution was:
     $class = My:Class->new(bar => 123);
   }
 
+=for stopwords codemulch
+
 Or some type of codemulch using ternary conditionals.  This module allows you
 to make your attributes more tolerant of undef so that you can keep the first
 example: have your cake and eat it too!
@@ -164,23 +165,52 @@ this is expected to be changing shortly.
 
 Many thanks to the crew in #moose who talked me through this module:
 
+=for stopwords Doran Eldridge Hardison Pearcey diz dylan jshirley
+
+=over 4
+
 Hans Dieter Pearcey (confound)
-
 Jesse Luehrs (doy)
-
 Tomas Doran (t0m)
-
 Dylan Hardison (dylan)
-
 Jay Shirley (jshirley)
-
 Mike Eldridge (diz)
+
+=back
 
 =head1 AUTHOR
 
 Cory G Watson <gphat at cpan.org>
 
-=head1 COPYRIGHT AND LICENSE
+=head1 CONTRIBUTORS
+
+=for stopwords Karen Etheridge Dave Rolsky Cory G Watson Jesse Luehrs Chris Andrews
+
+=over 4
+
+=item *
+
+Karen Etheridge <ether@cpan.org>
+
+=item *
+
+Dave Rolsky <autarch@urth.org>
+
+=item *
+
+Cory G Watson <gphat@cpan.org>
+
+=item *
+
+Jesse Luehrs <doy@tozt.net>
+
+=item *
+
+Chris Andrews <chrisandrews@venda.com>
+
+=back
+
+=head1 COPYRIGHT AND LICENCE
 
 This software is copyright (c) 2011 by Cory G Watson.
 

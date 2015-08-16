@@ -1,24 +1,27 @@
 Revision history for MooseX-UndefTolerant
 
-0.19      2012-09-25 17:16:40 PDT-0700 (Karen Etheridge)
+0.20      2015-08-16 02:45:25Z
+   * repository migrated to the github moose organization
+
+0.19      2012-09-26 00:16:40Z
    * fix incorrect version dependency on Test::NoWarnings
 
-0.18      2012-09-23 13:35:06 PDT-0700 (Karen Etheridge)
+0.18      2012-09-23 20:35:06Z
    * avoid undef warning by not attempting to manipulate constructor data for
      init_arg => undef attributes (thanks Damon Tkoch for the report!)
 
-0.17      2012-05-03 14:43:42 PDT-0700
+0.17      2012-05-03 21:43:42Z
     * re-release to fix dependency issue *again*! :)
 
-0.16      2012-05-02 15:13:01 PDT-0700
+0.16      2012-05-02 22:13:01Z
     * remove temporary dep, and increase the required version of
       Dist::Zilla::Plugin::Test::CheckDeps, that now injects this dependency
       automatically
 
-0.15      2012-05-02 12:56:59 PDT-0700
+0.15      2012-05-02 19:56:59Z
     * temporarily add missing dep on Test::CheckDeps
 
-0.14      2012-05-02 09:23:54 PDT-0700
+0.14      2012-05-02 16:23:54Z
     * re-release of 0.13 to fix a PAUSE indexing issue.
 
 0.13    2012-03-25
